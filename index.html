@@ -5,32 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gym Landing Page</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    
+    <style>
+       * {
+          box-sizing: border-box;
+        }
+        
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        /* Float four columns side by side */
+        .column {
+          float: left;
+          width: 25%;
+          padding: 0 5px;6
+        }
+        
+        .row {margin: 0 -5px;}
+        
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        /* Responsive columns */
+        @media screen and (max-width: 600px) {
+          .column {
+            width: 50px;
+            display: block;
+            height: 10px;
+            margin-bottom: 10px;
+          }
+        }
+        
+        /* Style the counter cards */
+        .card {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          padding: 50px;
+          text-align: center;
+          background-color: #444;
+          color: white;
+        }
+        
+        .fa {font-size:50px;}
+        .div.zoom:hover{
+          -ms-transform:scale(1.5);
+          -webkit-transform:scale(1.5);
+          transform: scale(1.5);
+        }
+
+        </style>
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">RDX GYM</div>
+            
             <ul>
-                <li><a href="">Home</a></li>
+                <li><a href="/">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#classes">Classes</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+                <li><a href="#contact">contact</a></li>
+              </div>
+             </ul>
         </nav>
-    
+
         <div class="hero">
-            <center>
-            <h1>Get Fit with RDX Gym</h1>
-            <p>Join us and transform your body</p>
-            <a href="#contact" class="cta-button">Get Started</a>
-            </center>
+            <div class="hero-content">
+                <h1>Get Fit with RDX Gym</h1>
+                <p>Join us and transform your body</p>
+                <a href="https://www.youtube.com/watch?v=FOHiDRbm84k" class="cta-button"> Get Started</a>
+            </div>
         </div>
     </header>
     <main>
         <section id="about">
             <h2>About Us</h2>
             <p>At GymX, we provide the best facilities and expert trainers to help you achieve your fitness goals.</p>
+            <br>
+            <p>Tour the Facility: Check the cleanliness, equipment condition, and overall atmosphere.</p>
         </section>
         <section id="classes">
             <h2>Our Classes</h2>
@@ -46,22 +109,54 @@
                 <h3>Weight Training</h3>
                 <p>Build muscle and strength with our expert guidance.</p>
             </div>
-             
         </section>
     </main>
-    <center>
-        <h1 style="color: black;">
-            APPLY NOW!
-        </h1>
-        <button>
-           <a href="custom.html"><b>click here.</b></a>
-        </button>
-    </center>
-    <br>
+    
+    
+<div class="row">
+  <div class="column">
+    <div class="card">
+    <p><i class="fa fa-user"></i></p>
+      <h3>11+</h3>
+      <p>Trainers</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <p><i class="fa fa-check"></i></p>
+      <h3>150+</h3>
+      <p>Equipments</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <p><i class="fa fa-smile-o"></i></p>
+      <h3>200+</h3>
+      <p>Happy Clients</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <p><i class="fa fa-coffee"></i></p>
+      <h3>150+</h3>
+      <p>live class</p>
+    </div>
+  </div>
+</div>
+    
+
+<br>
+
+    <div class="apply-now">
+        <h1>APPLY NOW!</h1>
+        <a href="custom.html" class="apply-button"><b>Click here.</b></a>
+    </div>
     <footer>
         <p>&copy; 2024 GymX. All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
-</div>
 </body>
 </html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Our Gym</title>
+    <link rel="stylesheet" href="style2.css">
+    
+</head>
+<body>
+    <div class="container">
+    
+        <h1>Join Our Gym</h1>
+        <section class="offers">
+            <h2>Special Membership Offers</h2>
+            <ul>
+                <li><strong>Basic Plan:</strong> ₹1000/month - Access to gym facilities and group classes.</li>
+                <li><strong>Premium Plan:</strong>₹2500 /month - Includes Basic Plan features plus personal training sessions.</li>
+                <li><strong>VIP Plan:</strong> ₹3500/month - All Premium Plan benefits plus unlimited guest passes and spa access.</li>
+            </ul>
+        </section>
+        
+        <form action="https://formspree.io/f/xvgpqbaj" method="POST">
+            <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="firstName" placeholder=" enter a first name" required>
+                
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="lastName" placeholder=" enter a last name" required>
+               
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"  placeholder="Enter an email" required>
+                <span class="error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+                 <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter an Number" pattern="[0-9]{10}" required>
+                <span class="error" id="phoneError"></span>
+                </div>
+            <div class="form-group">
+                <label for="membership">Membership Type</label>
+                <select id="membership" name="membership" required>
+                    <option value="" disabled selected>Select Membership Type</option>
+                    <option value="basic">Basic Plan -₹1000 /month</option>
+                    <option value="premium">Premium Plan - ₹2500/month</option>
+                    <option value="vip">VIP Plan - ₹3500/month</option>
+                </select>
+            </div>
+
+                <br>
+                <div class="form-group">
+                    <label for="comments">Additional Comments</label>
+                    <textarea id="comments" name="comments" placeholder="Any additional information or requests"></textarea>
+                </div>
+            </div>
+            
+            
+            <a href="customer.html">
+                <button type="submit">Submit</button>
+            </a> 
+                    
+        </form>
+    </div>
+    
+</body>
+</html>
